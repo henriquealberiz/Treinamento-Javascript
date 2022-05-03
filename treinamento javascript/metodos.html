@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos</title>
+</head>
+<body>
+    <!--os métodos confirm(), alert() e prompt() sao usados para exibir uma caia de dialogo pop-up para o usuario, com o intuito de xibir ou solicitar informaçoes-->
+    <!--Esses 3 metodos pertencem ao objeto window, que são referenciados como "window.confirm", "qindow.alert" e "window..prompt"-->
+    <!--o objeto window representa uma janela aberta no navegador, e contem outros objetos, como o objeto document.-->
+    <!--todos esses 3 métodos pertencem ao objeto window-->
+
+
+    <!--MÉTODO ALERT() é usado para mostrar uma caixa de alerta(dialogo) e um botao de ok.-->
+
+    <!--MÉTODO PROMPT() é utilizada para entrada de dados-->
+
+    <!--MÉTODO CONFIRM() usado para motrar uma caixa de confirmaçao, com uma mensagem especiicada, e botoes OK e CANCELAR-->
+    <!--Esse método retorna valores booleanos (true [OK] ou false[CANCELAR])-->
+
+
+    <!--MÉTODO DOCUMENT.WRITE() oermite escrever texto e HTML em um documento. pode ser textos (strings) ou marcações HTML. -->
+    <!--Esse método só funciona se estiver inserido no documento processado. Se or executado a partir de um evento, sobrescreverá todo o HTML da página. Nem sempre é indicado esse método.-->
+
+
+    <script>
+        var mensagem;
+        var retorno = confirm("Clique em um dos botoes!");
+        if(retorno==true){//condicional composto
+            mensagem= "Você clicou em <strong>OK</strong>!";// strong para deixxar em negrito
+        }else{
+            mensagem = "Voce clicou em <strong>CANCELAR</strong>";
+        }
+    
+        alert("Ola"); //meensagem indica o texto (string) a ser exibido na caixa de alerta
+        alert("Vamos estudar a linguagem \nJavascript hoje.");//\n é para quebrar linha no momento exato a esse codigo
+        var a = prompt("Digite seu nome:","Nome");//esse método retorna o que o usuario digitou
+        var b = prompt("Digite seu sobrenome:");
+        document.write("Bom dia, "+a+" "+b+" "+"<strong>Seja Bem vindo!</strong>"+"<br/>");//o sinal + está concatenando (juntar duas ou mais variaveis para formar uma frase) as duas variaveis
+        document.write(mensagem);// chamando o retorno da resposta da açao do usuario
+    </script>
+</body>
+</html>
