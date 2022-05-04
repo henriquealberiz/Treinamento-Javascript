@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constantes em Javascript</title>
+    <strong><h1>CONSTANTES EM JAVASCRIPT</h1></strong>
+</head>
+<body>
+    <!--uma variavel pode ter seu valor alterado a qualquer momento durante a execução do script-->
+    <!--As vezes precisamos armazenar valores ue nunca mudarao-->
+    <!--para isso podemos usar constantes-->
+    <!--Uma connstante é criada como uma variável inicializada, e seu valor é permanente, nao podendo ser alterado durante a execuçao do script.-->
+    <!--Beneficios de usar as constantes =>  dar mais segurança, impede que os valores sejam alterados e dar maior performance ao script.-->
+
+    <!--CRIANDO UMA CONSTANTE EM JAVASCRIPT-->
+    <!--Para criar uma constante usamos a palavra-chave CONST, seguida do nome desejado para a constante e de uma valor a ela atribuido.-->
+    
+    <!--EXEMPLO:
+    const PERIODO= 12; -->
+
+    <!--Boa prática: nomear as costantes com letras maiúsculas para se diferenciarem de variaveis normais.-->
+    <!--Se alterarmos o valor da constante no código, seu valor será automaticamente alterado em todos os pontos onde a constante aparece no script.-->
+    <script>
+        var nome;
+        const PERIODO = 10;
+        nome = prompt("digite seu nome:");
+        //PERIODO = 15; teste para ver se pode alerar o valor no meio do código
+        alert(nome + ",o período é constante com valor"+PERIODO);
+        document.write(nome + ",o período é constante com valor "+PERIODO);
+    </script>
+</body>
+</html>

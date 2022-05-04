@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Aritméticos</title>
+    <strong><h1>OPERADORES ARITMÉTICOS</h1></strong>
+</head>
+<style>
+   body {
+        text-align:justify ;
+        font-style: arial ;
+        font-size: 20px;
+        padding: 10px;
+    }
+    table {
+        text-align: center;
+    }
+</style>
+<body>
+    <a>Operadores aritméticos são utilizados para a realizaçao de cálculos simples em Javascript</a>
+    <a>Representam os operadores matemáticos básicos de soma, subtraçao, divisão e multiplicação, além de algumas operaçoes espaciais, como o módulo e incremento/decremento.</a>
+    <a>O Módulo é o resto de uma divisao inteira.</a>
+    <a>Incrementar significa aumentar o valor de algo, e decrementar significa diminuir o valor de algo (uma variavel, por exempo)</a>
+    <p></p>
+    <!--Tabela criada para uem for ver no navegador-->
+    <table border="2" align="center">
+    <tr>
+        <th>Operador</th>
+        <th>Significado</th>
+    </tr>
+    <tr>
+        <td>+</td>
+        <td>Soma</td>  
+    </tr>
+    <tr>
+        <td>-</td>
+        <td>Subtraçao</td>  
+    </tr>
+    <tr>
+        <td>*</td>
+        <td>Multiplicação</td>  
+    </tr>
+    <tr>
+        <td>/</td>
+        <td>Divisão</td>  
+    </tr>
+    <tr>
+        <td>%</td>
+        <td>Módulo</td>         
+    </tr>
+    <tr>
+        <td>++</td>
+        <td>Pré ou pós incremento</td>  
+    </tr>
+    <tr>
+        <td>--+</td>
+        <td>Pré ou pós decremento</td>  
+    </tr>   
+</table>
+<p></p>
+<a>OBS: o sinal de + serve para concatenar strings também, logo, é necessário verificar se os tipos envolvidos, sao tipos numéricos.</a>
+<P></P>
+<a>Abaixo farei um exemplo desses operadores em funcionamento, onde a variavel A irá receber 10 e a variavel B receberá 20.</a><p></p>
+<script>
+    var a=10;
+    var b=20;
+    document.write("Soma: "+(a+b)+"</br>");
+    document.write("Subtraçao: "+(a-b)+"</br>");
+    document.write("Multiplicaçao: "+(a*b)+"</br>");
+    document.write("Divisao: "+(a/b)+"</br>");
+    document.write("Módulo: "+(b%a)+"</br>");
+    document.write("Incremento: "+(++a)+"</br>");
+    document.write("Decremento: "+(--b)+"</br>");
+
+</script>
+<p></p>
+Código usado acima,, foi o seguinte: <br/>
+<!--Código copiado para visualizaçao no navegador-->
+script></br>
+    var a=10;</br>
+    var b=20;</br>
+    document.write("Soma: "+(a+b)+"br>");</br>
+    document.write("Subtraçao: "+(a-b)+"/br>");</br>
+    document.write("Multiplicaçao: "+(a*b)+"/br>");</br>
+    document.write("Divisao: "+(a/b)+"/br>");</br>
+    document.write("Módulo: "+(b%a)+"/br>");</br>
+    document.write("Incremento: "+(++a)+"/br>");</br>
+    document.write("Decremento: "+(--b)+"/br>");</br>
+
+/ script>
+</br>
+<a>Agora vamos calcular a área do terreno, usando método alert() para inserçao de valores atraves do prompt.</a></br>
+<script>
+    alert("Vamos calcular a área de um terreno.");
+    var a=prompt("Digite a largura em metros: ");
+    var b=prompt("Digite o comprimento, em metros: ");
+    var s= a*b;
+    document.write("A área do terreno é de "+s+"metros <br/>");
+</script>
+<a>O código utilazado foi:</a><br/>
+<!--Código copiado para visualizaçao no navegador-->
+script><br/>
+    alert("Vamos calcular a área de um terreno.");<br/>
+    var a=prompt("Digite a largura em metros: ");<br/>
+    var b=prompt("Digite o comprimento, em metros: ");<br/>
+    var s= a*b;<br/>
+    document.write("A área do terreno é de "+s+"metros br/>");<br/>
+/script><br/>
+</body>
+</html>

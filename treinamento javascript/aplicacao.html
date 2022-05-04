@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APLICAÇAO DE TODO CONTEÚDO APRENDIDO</title>
+    <strong><h1>APLICAÇÃO DE TODO CONTEÚDO APRENDIDO</h1></strong>
+</head>
+<body>
+    <script>
+        
+        const ANO= 2022; //constante criada       
+        var mensagem;
+        var retorno = confirm("Clique em um dos botoes!");
+        if(retorno==true){//condicional composto
+            mensagem= "Você clicou em <strong>OK</strong>!";// strong para deixxar em negrito
+        }else{
+            mensagem = "Voce clicou em <strong>CANCELAR</strong>";
+        }
+    
+        alert("Ola"); //meensagem indica o texto (string) a ser exibido na caixa de alerta
+        alert("Vamos estudar a linguagem \nJavascript hoje.");//\n é para quebrar linha no momento exato a esse codigo
+        var a = prompt("Digite seu nome:","Nome");//esse método retorna o que o usuario digitou
+        var b = prompt("Digite seu sobrenome:");
+        var idade = prompt("Digite sua idade:");
+        document.write("Bom dia, "+a+" "+b+" "+"<strong>Seja Bem vindo!</strong>"+"<br/>");//o sinal + está concatenando (juntar duas ou mais variaveis para formar uma frase) as duas variaveis
+        document.write(mensagem+"<br/>");// chamando o retorno da resposta da açao do usuario
+        document.write("O <strong>ano</strong> é: "+ANO+ "<br/>");// chamando a constante
+        document.write(" Sua <strong>idade</strong> é: "+idade+ " e sua <strong>idade</strong> em 2023 será : "+(++idade));//usando incremento
+   
+    </script>
+</body>
+</html>
